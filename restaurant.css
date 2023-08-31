@@ -1,0 +1,136 @@
+:root{
+    --red:crimson;
+    --green:#53bf9d;
+    --yellow:#ffc54d;
+    --white:whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.landing{
+    background: url(pexels-jessica-lewis-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    padding: 1em;
+    min-width: 120px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+#logo img
+{
+    height: 80px;
+    width: 80px;
+   margin-top: 1rem;
+    margin-left: 1rem;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+     color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+     margin-top: .75em;
+}
+.maintext button{
+    width: 20%;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+.menu
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+     background: linear-gradient(to right,grey,black);
+    color: var(--white);
+}
+#menuheading,#locheading
+{
+     display: grid;
+     background: linear-gradient(to right,grey,black);
+      font-size: 2.6em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;                
+}
+.h2
+{
+    color: var(--green);
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.9em;
+}
+.locations{
+    display: flex;
+    
+    justify-content: space-between;
+    background: linear-gradient(to right,grey,black);
+    color: var(--white);
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.locations h2{
+    color: var(--green);
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+
+}
